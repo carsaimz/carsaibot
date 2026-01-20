@@ -1,257 +1,282 @@
-# 📱 CarsaiBot - Documentação
+# 🚀 CarsaiBot - WhatsApp Bot Profissional & Modular
 
-## 📋 Índice
-1. [Introdução](#introdução)
-2. [Instalação](#instalação)
-3. [Configuração](#configuração)
-4. [Comandos](#comandos)
-5. [Sistemas](#sistemas)
-6. [API](#api)
-7. [Administração](#administração)
-8. [Solução de Problemas](#solução-de-problemas)
-9. [FAQ](#faq)
+**🔗 Base de Código Original:** Esta implementação é 100% de autoria de CarsaiDev. Ao utilizá-la ou derivá-la, é fundamental manter os créditos ao autor original. O compartilhamento de conhecimento fortalece a comunidade de desenvolvimento.
 
-## 📌 Introdução
+Um bot para WhatsApp robusto, construído com foco em performance, facilidade de manutenção e escalabilidade. Agora com **100+ comandos** organizados em 8 categorias, sistema de economia, downloads avançados e muito mais. Desenvolvido seguindo as melhores práticas para 2026, é a solução ideal para quem precisa de um sistema automatizado poderoso e estruturado.
 
-CarsaiBot é um bot WhatsApp completo desenvolvido com Baileys, oferecendo múltiplos sistemas e funcionalidades.
+![Version](https://img.shields.io/badge/version-2.0.1-blue)
+![Commands](https://img.shields.io/badge/comandos-100+-brightgreen)
+![Node](https://img.shields.io/badge/node-%3E%3D18-green)
+![License](https://img.shields.io/badge/license-ISC-orange)
+![CarsaiDev](https://img.shields.io/badge/Made%20by-CarsaiDev-red)
 
-### Características Principais
-- Sistema de economia virtual
-- Jogos e diversão
-- Downloads de mídia
-- Gerenciamento de grupos
-- Painel web administrativo
-- Sistema de backup automático
+## ✨ Novidades da Versão 2.0.1
 
-## 💻 Instalação
+### 📥 **SISTEMA DE DOWNLOAD COMPLETO**
+- ✅ **YouTube Downloader** - Vídeos e músicas com qualidade HD
+- ✅ **TikTok Downloader** - Vídeos com informações completas
+- ✅ **Instagram Downloader** - Fotos, vídeos e reels
+- ✅ **Facebook Downloader** - Vídeos públicos automaticamente
+- ✅ **Google Drive Downloader** - Arquivos públicos até 100MB
+- ✅ **MediaFire Downloader** - Links diretos com extração automática
+- ✅ **MEGA Downloader** - Suporte a links .nz públicos
+- ✅ **Download Universal** - Detecta plataforma automaticamente
 
-### Requisitos do Sistema
-- Node.js 18+
-- FFmpeg
-- Python 3
-- 2GB RAM (mínimo)
-- 20GB Espaço em disco
+### 🎬 **SISTEMA DE PESQUISA DE MÍDIA**
+- ✅ **Filmes** - Informações completas com TMDB
+- ✅ **Séries** - Temporadas, episódios e status
+- ✅ **Animes** - Detecta automaticamente tipo e gênero
+- ✅ **Atores** - Perfil completo e filmografia
 
-### Passo a Passo
+### 🔧 **MELHORIAS TÉCNICAS**
+- ✅ **Arquitetura modular** - Cada comando em arquivo separado
+- ✅ **Sistema de fallback** - Múltiplos métodos quando APIs falham
+- ✅ **Limites inteligentes** - Verificação de tamanho antes do download
+- ✅ **Progresso de download** - Feedback em tempo real
+- ✅ **Erros descritivos** - Dicas de solução para problemas comuns
 
-1. Instale as dependências:
-```bash
-./install_dependencies.sh
-```
+### 📊 **ESTATÍSTICAS**
+- ✅ **12 comandos novos** de mídia e download
+- ✅ **7 plataformas** suportadas para download
+- ✅ **4 fontes** de pesquisa de mídia
+- ✅ **100% compatível** com limites do WhatsApp
+- ✅ **Sistema automático** de detecção de plataforma
 
-2. Instale o bot:
-```bash
-./install.sh
-```
+### 🔄 **MUDANÇAS DA VERSÃO 2.0**
+- ✅ **Comandos mais específicos** (ex: !yt, !tiktok)
+- ✅ **Estrutura de arquivos reorganizada**
+- ✅ **Código otimizado** para performance
+- ✅ **Melhor documentação** e mensagens de ajuda
+- ✅ **Sistema de tradução** em comandos de mídia
 
-3. Inicie o bot:
-```bash
-# Opção 1 - Modo normal
-./start.sh
+### ⚠️ **REQUISITOS**
+- Node.js 16+
+- API Key TMDB (gratuita)
+- Dependências atualizadas (ver package.json)
+- Conexão estável com internet
 
-# Opção 2 - Modo desenvolvimento
-./dev.sh
+📖 **Ver todas as mudanças no [CHANGELOG.md](CHANGELOG.md)**
 
-# Opção 3 - Com PM2
-pm2 start ecosystem.config.js
-```
+## 🚀 Começando Rápido
 
-## ⚙️ Configuração
+Siga estes passos para colocar o bot em funcionamento:
 
-### Arquivo config.json
-```json
-{
-    "name": "NomeDoBot",
-    "prefix": "!",
-    "owner": ["258862414345@s.whatsapp.net"],
-    "supportGroup": "https://chat.whatsapp.com/HgYs7Rk3T9sGdrJxGRQzri",
-    "language": "pt-BR",
-    "antiSpam": true,
-    "antiLink": true
-}
-```
+1.  **Clone e Instale:**
+    ```bash
+    git clone https://github.com/carsaimz/carsaibot.git
+    cd carsaibot
+    npm install
+    ```
 
-### Configurações Disponíveis
-| Configuração | Descrição | Padrão |
-|-------------|-----------|---------|
-| name | Nome do bot | CarsaiBot |
-| prefix | Prefixo dos comandos | ! |
-| antiSpam | Anti-spam | true |
-| antiLink | Anti-link | true |
-| maxWarnings | Máximo de advertências | 3 |
+2.  **Gere a Chave de Ativação de Bot (se necessário, caso seja novo):**
+- Entra no site do bot [carsaibot.linkpc.net](https://carsaibot.linkpc.net)
+- Clique em "Chaves" ou "Começar Agora" (ou procure documentação)
+- Na página de geração de chaves, clique em "Gerar Chave"
+- Copie a chave e coloque no arquivo *configuration.js* no campo *activationKey = "chave"* (substituir palavra *chave* pela chave copiada)
 
-## 🎮 Comandos
+3.  **Configure as APIs (opcional mas recomendado):**
+    Edite `configuration.js` e adicione suas chaves gratuitas:
+    - OpenWeatherMap (para `!clima`)
+    - NewsAPI (para `!noticias`)
+    - TMDB API (para `!filme`, `!serie`, `!anime` e `!ator`)
 
-### Economia
-| Comando | Descrição | Uso |
-|---------|-----------|-----|
-| !daily | Recebe bônus diário | !daily |
-| !pay | Transfere dinheiro | !pay @user 1000 |
-| !balance | Ver saldo | !balance |
+4.  **Inicie o Sistema:**
+    ```bash
+    npm start
+    ```
+ou
+    ```bash
+    sh start.sh
+    ```
 
-### Diversão
-| Comando | Descrição | Uso |
-|---------|-----------|-----|
-| !tictactoe | Jogo da velha | !tictactoe @user |
-| !hangman | Jogo da forca | !hangman |
-| !dice | Rolar dados | !dice 6 |
+5.  **Realize o Pareamento:** No primeiro acesso, o bot solicitará o número do WhatsApp. Um código de pareamento será exibido no terminal. Basta inseri-lo no seu aplicativo WhatsApp em **Aparelhos Conectados > Conectar com número**.
 
-### Downloads
-| Comando | Descrição | Uso |
-|---------|-----------|-----|
-| !play | Baixa música | !play nome da música |
-| !video | Baixa vídeo | !video URL |
-| !tiktok | Baixa TikTok | !tiktok URL |
+## 🏗️ Arquitetura do Projeto
 
-### Administração
-| Comando | Descrição | Uso |
-|---------|-----------|-----|
-| !ban | Bane usuário | !ban @user |
-| !warn | Adverte usuário | !warn @user motivo |
-| !settings | Configurações | !settings list |
+A estrutura modular facilita a expansão e organização do código.
 
-## 🔧 Sistemas
+*   `index.js`: O cérebro do bot. Gerencia o fluxo de mensagens e o sistema de comandos.
+*   `connection.js`: Cuida de toda a comunicação com a biblioteca Baileys e do processo de Pairing Code.
+*   `configuration.js`: Central de configurações (Nome do Bot, Prefixo, Números de Admin, Chave de Licença, API Keys).
+*   `/commands`: Pasta modular com **100+ comandos** organizados automaticamente. Cada novo arquivo `.js` aqui é automaticamente reconhecido como um comando.
+*   `/lib`: Bibliotecas internas com funções utilitárias e um sistema avançado de logs coloridos.
+*   `/database`: Armazenamento local para persistência de dados.
 
-### Sistema de Economia
-- Moeda virtual
-- Transferências
-- Loja virtual
-- Ranking
+## ✨ Funcionalidades Principais
 
-### Sistema de Jogos
-- Jogo da velha
-- Forca
-- Dados
-- Ranking global
+### 🎯 **Núcleo Avançado**
+*   **Sistema de Licenciamento:** Ativação segura via chave, configurável em `configuration.js`.
+*   **Arquitetura Modular:** Adicione ou remova funcionalidades criando arquivos na pasta `/commands` sem tocar no núcleo.
+*   **Logs Inteligentes:** Saída no console organizada de forma vertical e colorida para melhor depuração e monitoramento.
+*   **Conexão via Pairing Code:** Conecte-se usando apenas o número de telefone, sem a necessidade de escanear QR Codes.
 
-### Sistema de Downloads
-- YouTube (áudio/vídeo)
-- TikTok
-- Instagram
-- Gerenciamento automático
+### 🎨 **Processamento de Mídia**
+*   **Auto-Sticker:** Converta qualquer imagem em figurinha automaticamente ao enviá-la com a legenda **"s"**.
+*   **Conversor de Mídia:** Converta entre formatos de áudio, vídeo e imagem.
+*   **Download do YouTube:** Baixe vídeos e áudio do YouTube com qualidade configurável.
+*   **Text-to-Speech:** Converta texto em áudio em múltiplos idiomas.
 
-### Sistema de Grupos
-- Anti-link
-- Anti-spam
-- Bem-vindo
-- Advertências
+### 👥 **Gestão Inteligente**
+*   **Gestão Completa de Grupos:** Comandos integrados para administração (banir, adicionar, promover, marcar todos).
+*   **Sistema Anti-Link:** Detecta e remove automaticamente links não autorizados em grupos.
+*   **Simulação de Presença:** O bot simula o status "digitando..." durante o processamento, proporcionando uma interação mais natural.
 
-## 🌐 API
+### 🌐 **Integrações Online**
+*   **Tradução em Tempo Real:** Traduza entre 100+ idiomas usando Google Translate.
+*   **Consultas Online:** Busque informações em Wikipedia, notícias, cotações, clima, filmes e séries.
+*   **Geração de QR Codes:** Crie QR Codes personalizados para qualquer texto ou URL.
 
-### Endpoints
+## 📜 Sistema de Comandos Modular
+
+A pasta `/commands` é o coração da expansibilidade do bot. Para criar um novo comando:
+
+1.  Crie um novo arquivo `.js` dentro da pasta `/commands`.
+2.  Exporte um objeto seguindo este modelo:
+
 ```javascript
-GET /api/stats - Estatísticas do bot
-POST /api/message - Envia mensagem
-GET /api/logs - Logs do sistema
+const config = require('../configuration');
+
+module.exports = {
+    nome: "nomecomando", // Nome do comando (sem prefixo)
+    descricao: "Descrição clara do que o comando faz.",
+    categoria: "categoria", // Categoria para organização automática
+    exemplo: "exemplo de uso", // Opcional: exemplo de uso
+    executar: async (sock, msg, args) => {
+        // Sua lógica aqui
+        const from = msg.key.remoteJid;
+        await sock.sendMessage(from, { text: "Resposta do comando!" });
+    }
+};
 ```
 
-### WebSocket
+O sistema automaticamente:
+
+- Registra o comando para ser acionado com ${config.prefixo}nomecomando.
+- Organiza por categoria na listagem gerada pelo ${config.prefixo}menu.
+- Inclui exemplo de uso no comando ${config.prefixo}ajuda.
+
+### 📋 Exemplos de Uso
+
+**Comandos Básicos**
+
+```bash
+!menu                    # Mostra todos os comandos organizados
+!ajuda ping              # Ajuda específica sobre um comando
+!ping                    # Testa a latência do bot
+!status                  # Status completo do sistema
+```
+
+**Utilitários Práticos**
+
+```bash
+!clima Maputo            # Previsão do tempo atual
+!calc 15 * 3             # Calculadora científica
+!traducao pt en Olá      # Traduz "Olá" de português para inglês
+!qrcode https://google.com # Gera QR Code para o Google
+```
+
+**Administração de Grupos**
+
+```bash
+!ban @usuário            # Remove um membro do grupo
+!promover @usuário       # Torna um membro administrador
+!marcartodos Atenção!    # Menciona todos os membros
+!antilink                # Ativa/desativa sistema anti-link
+!listaradmins            # Lista todos os administradores
+```
+
+**Entretenimento**
+
+```bash
+!dado 20                 # Rola um dado de 20 lados
+!caraoucoroa             # Joga cara ou coroa
+!piada                   # Conta uma piada aleatória
+!quiz                    # Inicia um quiz interativo
+!filme Titanic           # Informações sobre o filme
+```
+
+## 🔧 Configuração Avançada
+
+### API Keys Gratuitas
+
+Para funcionalidades completas, obtenha estas APIs gratuitas:
+
+1. OpenWeatherMap (clima): https://openweathermap.org/api
+2. NewsAPI (notícias): https://newsapi.org
+3. OMDB API (filmes): http://www.omdbapi.com/apikey.aspx
+
+**Adicione as chaves em configuration.js:**
+
 ```javascript
-socket.on('stats', (data) => {
-    // Recebe estatísticas em tempo real
-});
+module.exports = {
+    // ... outras configurações
+    openWeatherKey: "SUA_CHAVE_AQUI",
+    newsApiKey: "SUA_CHAVE_AQUI",
+    omdbApiKey: "SUA_CHAVE_AQUI",
+    // ...
+};
 ```
 
-## 👑 Administração
+**Instalação do FFmpeg (Requerido para mídia)**
 
-### Painel Web
-- URL: http://seu-ip:3000
-- Login: admin
-- Senha: definida na instalação
-
-### Recursos
-- Monitoramento em tempo real
-- Gerenciamento de usuários
-- Logs do sistema
-- Backup/Restore
-
-## ❗ Solução de Problemas
-
-### Erros Comuns
-
-1. Bot não conecta
 ```bash
-# Verifique os logs
-pm2 logs carsaibot
+# Ubuntu/Debian
+sudo apt update && sudo apt install ffmpeg -y
 
-# Limpe a sessão
-rm -rf auth_info_baileys
+# macOS
+brew install ffmpeg
+
+# Windows (Chocolatey)
+choco install ffmpeg
 ```
 
-2. Comandos não funcionam
+
+**Modo Debug**
+
 ```bash
-# Verifique as permissões
-ls -l plugins/
-
-# Recarregue os comandos
-!reload
+npm run dev  # Modo desenvolvimento com recarga automática
 ```
 
-3. Erros de memória
-```bash
-# Aumente o limite de memória
-NODE_OPTIONS="--max-old-space-size=4096"
-```
+### 👨‍💻 Sobre o Desenvolvedor & a Organização
 
-## ❓ FAQ
+O CarsaiBot é um projeto desenvolvido pela CarsaiDev, parte do ecossistema digital CarsaiMz (ou Carsai Mozambique). A organização está sediada em Moçambique e tem como foco fornecer soluções acessíveis em desenvolvimento web, hospedagem e educação digital.
 
-### Perguntas Frequentes
+- Dono do Projeto: CarsaiDev
+- Nome do Bot: CarsaiBot
+- Versão: 2.0.1 
+- WhatsApp para Contato: +258 86 241 4345
+- Email: suporte.carsaimz@gmail.com
 
-1. Como adicionar novos comandos?
-- Crie um arquivo .js na pasta plugins/
-- Use o modelo de comando existente
-- Reinicie o bot
+### 🌐 Portfólio de Plataformas Carsai
 
-2. Como fazer backup?
-```bash
-# Backup manual
-!backup
+A organização mantém um conjunto de plataformas que complementam sua missão de democratizar o acesso à tecnologia:
 
-# Backup automático
-Configurado para rodar a cada 24h
-```
+*   **[CarsaiDev](https://carsaidev.linkpc.net/):** Hub principal para desenvolvimento web sob encomenda e soluções personalizadas.
+*   **[CarsaiMZ](https://carsaimz.site):** Site oficial da organização em Moçambique.
+*   **[Carsai LMS](https://carsailms.linkpc.net):** Sistema de Gestão de Aprendizagem (LMS) para oferta de cursos online gratuitos e pagos. Segue a filosofia de sistemas abertos e focados na experiência educacional, similar a projetos de código aberto como o Sakai LMS.
+*   **[Carsai Host](https://carsaihost.linkpc.net):** Serviço de hospedagem web acessível.
+*   **[Carsai BMS](https://carsaibms.linkpc.net):** Sistema de Gestão de Negócios para empreendedores.
 
-3. Como atualizar o bot?
-```bash
-# Atualize os arquivos
-git pull
+### 🤝 Contribuindo
 
-# Atualize as dependências
-npm install
+Contribuições são bem-vindas! Para contribuir:
 
-# Reinicie o bot
-pm2 restart carsaibot
-```
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (git checkout -b feature/AmazingFeature)
+3. Commit suas mudanças (git commit -m 'Add: AmazingFeature')
+4. Push para a Branch (git push origin feature/AmazingFeature)
+5. Abra um Pull Request
 
-### Dicas e Truques
+### 📄 Licença
 
-1. Performance
-- Use PM2 para gerenciamento
-- Ative o modo de baixo consumo
-- Configure limites de uso
-
-2. Segurança
-- Mantenha o config.json seguro
-- Use senhas fortes
-- Faça backups regulares
-
-3. Customização
-- Edite as mensagens em src/messages/
-- Personalize o menu em plugins/menu.js
-- Adicione seus próprios comandos
-
-## 📞 Suporte
-
-- Grupo: [https://chat.whatsapp.com/HgYs7Rk3T9sGdrJxGRQzri](https://chat.whatsapp.com/HgYs7Rk3T9sGdrJxGRQzri)
-- Issues: GitHub Issues
-- Email: [carsaimozambique@gmail.com](carsaimozambique@gmail.com)
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Distribuído sob licença ISC. Veja [LICENSE](LICENSE) para mais informações.
 
 ---
-**Nota**: Mantenha esta documentação atualizada conforme o bot evolui.# carsaibot
-# carsaibot
-# carsaibot
-# carsaibot
+
+🇲🇿 Desenvolvido com ❤️ em Moçambique pela CarsaiMz
+"Democratizando o acesso à tecnologia em Moçambique e além"
+
+---
+
+Nota: Este bot é fornecido como uma ferramenta para desenvolvimento e aprendizado. Utilize-o com responsabilidade e em conformidade com os Termos de Serviço do WhatsApp.
+
